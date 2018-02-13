@@ -21,6 +21,9 @@ cd $GOPATH/src/github.com/sunwxg/golibwireshark
 cat libs/libwireshark.{00,01,02,03} > libs/libwireshark.so
 chmod 775 libs/libwireshark.so
 
+
+For new Ubuntu versions need to copy the libwireshark, libwsutil and libwiretap in libs and symlink
+
 go build
 go test
 ```
